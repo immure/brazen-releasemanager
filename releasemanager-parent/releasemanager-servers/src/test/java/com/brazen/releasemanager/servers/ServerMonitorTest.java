@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.brazen.releasemanager.ReleaseManagerAppCore;
@@ -49,6 +50,7 @@ public class ServerMonitorTest {
 	}
 	
 	@Test
+	@Ignore // Takes a while to run..
 	public void testBadAddress() {
 		
 		Server s = new Server();

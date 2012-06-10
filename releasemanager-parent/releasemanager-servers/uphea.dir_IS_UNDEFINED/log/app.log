@@ -152,3 +152,170 @@ Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: S
 1411 INFO  [2012-06-10 00:36:12,591 main] jodd.db.pool.CoreConnectionPool#info:46 - core connection pool shutdown
 1412 INFO  [2012-06-10 00:36:12,592 main] jodd.db.pool.CoreConnectionPool#info:46 - core connection pool shutdown
 1412 INFO  [2012-06-10 00:36:12,592 main] jodd.joy.core.DefaultAppCore#info:46 - app stopped
+229 INFO  [2012-06-10 11:04:18,874 main] jodd.joy.core.DefaultAppCore#info:46 - app dir: /home/mike/dev/brazenrm/brazen-releasemanager/releasemanager-parent/releasemanager-servers
+234 INFO  [2012-06-10 11:04:18,879 main] jodd.joy.core.DefaultAppCore#info:46 - brazen.dir: /home/mike/dev/brazenrm/brazen-releasemanager/releasemanager-parent/releasemanager-servers
+234 INFO  [2012-06-10 11:04:18,879 main] jodd.joy.core.DefaultAppCore#info:46 - proxetta initialization
+243 INFO  [2012-06-10 11:04:18,888 main] jodd.joy.core.DefaultAppCore#info:46 - petite initialization
+252 DEBUG [2012-06-10 11:04:18,897 main] jodd.petite.PetiteContainer#debug:36 - Petite container created.
+253 INFO  [2012-06-10 11:04:18,898 main] jodd.joy.core.DefaultAppCore#info:46 - app in web: false
+327 DEBUG [2012-06-10 11:04:18,972 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for jodd/joy/crypt/PasswordEncoder
+339 DEBUG [2012-06-10 11:04:18,984 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: passwordEncoder of type: PasswordEncoder in: SingletonScope using wiring mode: STRICT
+343 DEBUG [2012-06-10 11:04:18,988 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for jodd/joy/db/AppDao
+344 DEBUG [2012-06-10 11:04:18,989 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: appDao of type: AppDao in: SingletonScope using wiring mode: STRICT
+398 DEBUG [2012-06-10 11:04:19,043 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/service/ServerService
+404 DEBUG [2012-06-10 11:04:19,049 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: serverService of type: ServerService$Proxetta in: SingletonScope using wiring mode: STRICT
+410 DEBUG [2012-06-10 11:04:19,055 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/service/EnvironmentService
+412 DEBUG [2012-06-10 11:04:19,057 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: environmentService of type: EnvironmentService$Proxetta in: SingletonScope using wiring mode: STRICT
+421 DEBUG [2012-06-10 11:04:19,066 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/install/DbInstaller
+423 DEBUG [2012-06-10 11:04:19,068 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: dbInstaller of type: DbInstaller in: SingletonScope using wiring mode: STRICT
+425 DEBUG [2012-06-10 11:04:19,070 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/AppData
+425 DEBUG [2012-06-10 11:04:19,070 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: appData of type: AppData in: SingletonScope using wiring mode: STRICT
+427 DEBUG [2012-06-10 11:04:19,072 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/ReleaseManagerAppInit
+428 DEBUG [2012-06-10 11:04:19,073 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: appInit of type: ReleaseManagerAppInit in: SingletonScope using wiring mode: STRICT
+477 DEBUG [2012-06-10 11:04:19,122 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/servers/ServerMonitor
+479 DEBUG [2012-06-10 11:04:19,124 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: serverMonitor of type: ServerMonitor$Proxetta in: SingletonScope using wiring mode: STRICT
+479 INFO  [2012-06-10 11:04:19,124 main] j.p.c.AutomagicPetiteConfigurator#info:46 - Petite configured in 204 ms. Total beans: 8
+574 DEBUG [2012-06-10 11:04:19,219 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/ReleaseManagerAppCore
+575 DEBUG [2012-06-10 11:04:19,220 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: app of type: ReleaseManagerAppCore in: SingletonScope using wiring mode: STRICT
+616 INFO  [2012-06-10 11:04:19,261 main] jodd.joy.core.DefaultAppCore#info:46 - database initialization
+619 DEBUG [2012-06-10 11:04:19,264 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for jodd/db/pool/CoreConnectionPool
+628 DEBUG [2012-06-10 11:04:19,273 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: dbpool of type: CoreConnectionPool in: SingletonScope using wiring mode: STRICT
+638 INFO  [2012-06-10 11:04:19,283 main] jodd.db.pool.CoreConnectionPool#info:46 - core connection pool initialization
+1162 DEBUG [2012-06-10 11:04:19,807 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for jodd/db/oom/DbOomManager
+1163 DEBUG [2012-06-10 11:04:19,808 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: dboom of type: DbOomManager in: SingletonScope using wiring mode: STRICT
+1294 INFO  [2012-06-10 11:04:19,939 main] j.d.o.c.AutomagicDbOomConfigurator#info:46 - DbOomManager configured in 107 ms. Total entities: 9
+1300 DEBUG [2012-06-10 11:04:19,945 main] c.b.r.ReleaseManagerAppInit#init:24 - app init
+1301 DEBUG [2012-06-10 11:04:19,946 main] c.b.r.ReleaseManagerAppInit#init:25 - brazen doc root: null
+1301 DEBUG [2012-06-10 11:04:19,946 main] c.b.r.install.DbInstaller#debug:36 - Check database.
+1302 DEBUG [2012-06-10 11:04:19,947 main] jodd.db.DbSession#debug:36 - Creating new db session
+1306 DEBUG [2012-06-10 11:04:19,951 main] jodd.db.pool.CoreConnectionPool#debug:36 - returning valid pooled connection
+1308 DEBUG [2012-06-10 11:04:19,953 main] jodd.db.DbQueryBase#debug:36 - Executing statement: select count(1) from bz_environment_type
+1312 DEBUG [2012-06-10 11:04:19,957 main] c.b.r.install.DbInstaller#debug:36 - Database OK.
+1313 DEBUG [2012-06-10 11:04:19,958 main] jodd.db.DbSession#debug:36 - Closing db session
+1314 INFO  [2012-06-10 11:04:19,959 main] c.b.r.install.DbInstaller#info:46 - Resetting database...
+1314 DEBUG [2012-06-10 11:04:19,959 main] c.b.r.install.DbInstaller#debug:36 - Executing /res/db-hsqldb-reset.sql
+1316 DEBUG [2012-06-10 11:04:19,961 main] jodd.db.DbSession#debug:36 - Creating new db session
+1316 DEBUG [2012-06-10 11:04:19,961 main] jodd.db.pool.CoreConnectionPool#debug:36 - returning valid pooled connection
+1317 DEBUG [2012-06-10 11:04:19,962 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_artifact 
+1318 DEBUG [2012-06-10 11:04:19,963 main] c.b.r.install.DbInstaller#debug:36 - executed query #1
+1318 DEBUG [2012-06-10 11:04:19,963 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_build 
+1319 DEBUG [2012-06-10 11:04:19,964 main] c.b.r.install.DbInstaller#debug:36 - executed query #2
+1319 DEBUG [2012-06-10 11:04:19,964 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_product 
+1320 DEBUG [2012-06-10 11:04:19,965 main] c.b.r.install.DbInstaller#debug:36 - executed query #3
+1320 DEBUG [2012-06-10 11:04:19,965 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_server 
+1321 DEBUG [2012-06-10 11:04:19,966 main] c.b.r.install.DbInstaller#debug:36 - executed query #4
+1322 DEBUG [2012-06-10 11:04:19,967 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_environment_type 
+1322 DEBUG [2012-06-10 11:04:19,967 main] c.b.r.install.DbInstaller#debug:36 - executed query #5
+1323 DEBUG [2012-06-10 11:04:19,968 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_environment 
+1323 DEBUG [2012-06-10 11:04:19,968 main] c.b.r.install.DbInstaller#debug:36 - executed query #6
+1324 DEBUG [2012-06-10 11:04:19,969 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_deployment 
+1326 DEBUG [2012-06-10 11:04:19,971 main] c.b.r.install.DbInstaller#debug:36 - executed query #7
+1326 DEBUG [2012-06-10 11:04:19,971 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_user 
+1327 DEBUG [2012-06-10 11:04:19,972 main] c.b.r.install.DbInstaller#debug:36 - executed query #8
+1327 DEBUG [2012-06-10 11:04:19,972 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_serverstatus 
+1328 DEBUG [2012-06-10 11:04:19,973 main] c.b.r.install.DbInstaller#debug:36 - executed query #9
+1328 DEBUG [2012-06-10 11:04:19,973 main] jodd.db.DbSession#debug:36 - Closing db session
+1329 INFO  [2012-06-10 11:04:19,974 main] c.b.r.install.DbInstaller#info:46 - Database reset
+1329 INFO  [2012-06-10 11:04:19,974 main] c.b.r.install.DbInstaller#info:46 - Creating database...
+1330 DEBUG [2012-06-10 11:04:19,975 main] c.b.r.install.DbInstaller#debug:36 - Executing /res/db-hsqldb.sql
+1334 DEBUG [2012-06-10 11:04:19,979 main] jodd.db.DbSession#debug:36 - Creating new db session
+1334 DEBUG [2012-06-10 11:04:19,979 main] jodd.db.pool.CoreConnectionPool#debug:36 - returning valid pooled connection
+1335 DEBUG [2012-06-10 11:04:19,980 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_artifact ( id INT IDENTITY, artifactId VARCHAR(1000) NOT NULL, version VARCHAR(200) NOT NULL ) 
+1336 DEBUG [2012-06-10 11:04:19,981 main] c.b.r.install.DbInstaller#debug:36 - executed query #1
+1337 DEBUG [2012-06-10 11:04:19,982 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_artifact_artifactId ON bz_artifact (artifactId) 
+1337 DEBUG [2012-06-10 11:04:19,982 main] c.b.r.install.DbInstaller#debug:36 - executed query #2
+1338 DEBUG [2012-06-10 11:04:19,983 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_build ( id INT IDENTITY, build_id VARCHAR(200) NOT NULL, version VARCHAR(200) NOT NULL, product INT NOT NULL ) 
+1343 DEBUG [2012-06-10 11:04:19,988 main] c.b.r.install.DbInstaller#debug:36 - executed query #3
+1344 DEBUG [2012-06-10 11:04:19,989 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_build_buildid ON bz_build (build_id) 
+1344 DEBUG [2012-06-10 11:04:19,989 main] c.b.r.install.DbInstaller#debug:36 - executed query #4
+1345 DEBUG [2012-06-10 11:04:19,990 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_build_version ON bz_build (build_id, version) 
+1345 DEBUG [2012-06-10 11:04:19,990 main] c.b.r.install.DbInstaller#debug:36 - executed query #5
+1347 DEBUG [2012-06-10 11:04:19,992 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_build_product ON bz_build (product) 
+1347 DEBUG [2012-06-10 11:04:19,992 main] c.b.r.install.DbInstaller#debug:36 - executed query #6
+1348 DEBUG [2012-06-10 11:04:19,993 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_product ( id INT IDENTITY, product_name VARCHAR(200) ) 
+1349 DEBUG [2012-06-10 11:04:19,994 main] c.b.r.install.DbInstaller#debug:36 - executed query #7
+1352 DEBUG [2012-06-10 11:04:19,997 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_product_productname ON bz_product (product_name) 
+1353 DEBUG [2012-06-10 11:04:19,998 main] c.b.r.install.DbInstaller#debug:36 - executed query #8
+1354 DEBUG [2012-06-10 11:04:19,999 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_server ( id INT identity, name VARCHAR(200) NOT NULL, address VARCHAR(200) NOT NULL, environment INT, status INT ) 
+1355 DEBUG [2012-06-10 11:04:20,000 main] c.b.r.install.DbInstaller#debug:36 - executed query #9
+1355 DEBUG [2012-06-10 11:04:20,000 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_server_name ON bz_server (name) 
+1355 DEBUG [2012-06-10 11:04:20,000 main] c.b.r.install.DbInstaller#debug:36 - executed query #10
+1356 DEBUG [2012-06-10 11:04:20,001 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_server_address ON bz_server(address) 
+1357 DEBUG [2012-06-10 11:04:20,002 main] c.b.r.install.DbInstaller#debug:36 - executed query #11
+1357 DEBUG [2012-06-10 11:04:20,002 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_environment_type ( id INT IDENTITY, environment_type_name VARCHAR(100) NOT NULL ) 
+1359 DEBUG [2012-06-10 11:04:20,004 main] c.b.r.install.DbInstaller#debug:36 - executed query #12
+1360 DEBUG [2012-06-10 11:04:20,005 main] jodd.db.DbQueryBase#debug:36 - Executing update: INSERT INTO bz_environment_type VALUES (0, 'STAGING') 
+1362 DEBUG [2012-06-10 11:04:20,007 main] c.b.r.install.DbInstaller#debug:36 - executed query #13
+1362 DEBUG [2012-06-10 11:04:20,007 main] jodd.db.DbQueryBase#debug:36 - Executing update: INSERT INTO bz_environment_type VALUES (1, 'PRODUCTION') 
+1363 DEBUG [2012-06-10 11:04:20,008 main] c.b.r.install.DbInstaller#debug:36 - executed query #14
+1363 DEBUG [2012-06-10 11:04:20,008 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_environment ( id INT IDENTITY, environment_name VARCHAR(200) NOT NULL, environment_type INT ) 
+1364 DEBUG [2012-06-10 11:04:20,009 main] c.b.r.install.DbInstaller#debug:36 - executed query #15
+1365 DEBUG [2012-06-10 11:04:20,010 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_environment_name ON bz_environment (environment_name) 
+1365 DEBUG [2012-06-10 11:04:20,010 main] c.b.r.install.DbInstaller#debug:36 - executed query #16
+1366 DEBUG [2012-06-10 11:04:20,011 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_deployment ( id INT IDENTITY, deployment_time TIMESTAMP NOT NULL, server INT, build INT ) 
+1367 DEBUG [2012-06-10 11:04:20,012 main] c.b.r.install.DbInstaller#debug:36 - executed query #17
+1367 DEBUG [2012-06-10 11:04:20,012 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_deployment_server ON bz_deployment (server) 
+1367 DEBUG [2012-06-10 11:04:20,012 main] c.b.r.install.DbInstaller#debug:36 - executed query #18
+1368 DEBUG [2012-06-10 11:04:20,013 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_deployment_build ON bz_deployment (build) 
+1368 DEBUG [2012-06-10 11:04:20,013 main] c.b.r.install.DbInstaller#debug:36 - executed query #19
+1369 DEBUG [2012-06-10 11:04:20,014 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_user ( id INT IDENTITY, screen_name VARCHAR(20) NOT NULL, name VARCHAR(100) NOT NULL, hashpw VARCHAR(100) NOT NULL ) 
+1370 DEBUG [2012-06-10 11:04:20,015 main] c.b.r.install.DbInstaller#debug:36 - executed query #20
+1370 DEBUG [2012-06-10 11:04:20,015 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_user_screenname ON bz_user (screen_name) 
+1371 DEBUG [2012-06-10 11:04:20,016 main] c.b.r.install.DbInstaller#debug:36 - executed query #21
+1371 DEBUG [2012-06-10 11:04:20,016 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_serverstatus ( id INT IDENTITY, health VARCHAR(10) NOT NULL, warningMessage VARCHAR(1000) ) 
+1372 DEBUG [2012-06-10 11:04:20,017 main] c.b.r.install.DbInstaller#debug:36 - executed query #22
+1372 DEBUG [2012-06-10 11:04:20,017 main] jodd.db.DbSession#debug:36 - Closing db session
+1373 INFO  [2012-06-10 11:04:20,018 main] c.b.r.install.DbInstaller#info:46 - Database created.
+1373 INFO  [2012-06-10 11:04:20,018 main] jodd.joy.core.DefaultAppCore#info:46 - app started
+1386 DEBUG [2012-06-10 11:04:20,031 main] jodd.jtx.JtxTransactionManager#debug:36 - Requesting TX jtx{Requires New,readonly,Default,-1}
+1388 DEBUG [2012-06-10 11:04:20,033 main] jodd.jtx.JtxTransaction#debug:36 - New JTX {status:Active, mode:jtx{Requires New,readonly,Default,-1}}
+1390 DEBUG [2012-06-10 11:04:20,035 main] jodd.jtx.worker.LeanJtxWorker#debug:36 - commit tx
+1390 DEBUG [2012-06-10 11:04:20,035 main] jodd.jtx.JtxTransaction#debug:36 - Commit JTX
+1391 DEBUG [2012-06-10 11:04:20,036 main] jodd.jtx.JtxTransactionManager#debug:36 - Requesting TX jtx{Requires New,readonly,Default,-1}
+1392 DEBUG [2012-06-10 11:04:20,037 main] jodd.jtx.JtxTransaction#debug:36 - New JTX {status:Active, mode:jtx{Requires New,readonly,Default,-1}}
+11920 DEBUG [2012-06-10 11:04:30,565 main] c.b.r.servers.ServerMonitor#getServerStatus:52 - Unable to resolve address: giwrgoiwhoiuho (giwrgoiwhoiuho)
+11920 DEBUG [2012-06-10 11:04:30,565 main] jodd.jtx.worker.LeanJtxWorker#debug:36 - commit tx
+11921 DEBUG [2012-06-10 11:04:30,566 main] jodd.jtx.JtxTransaction#debug:36 - Commit JTX
+11921 DEBUG [2012-06-10 11:04:30,566 main] jodd.jtx.JtxTransactionManager#debug:36 - Requesting TX jtx{Requires New,readonly,Default,-1}
+11923 DEBUG [2012-06-10 11:04:30,568 main] jodd.jtx.JtxTransaction#debug:36 - New JTX {status:Active, mode:jtx{Requires New,readonly,Default,-1}}
+11944 DEBUG [2012-06-10 11:04:30,589 main] jodd.jtx.worker.LeanJtxWorker#debug:36 - commit tx
+11945 DEBUG [2012-06-10 11:04:30,590 main] jodd.jtx.JtxTransaction#debug:36 - Commit JTX
+12700 ERROR [2012-06-10 14:33:42,470 reader] n.s.sshj.transport.TransportImpl#die:570 - Dying because - net.schmizz.sshj.transport.TransportException: [HOST_KEY_NOT_VERIFIABLE] Could not verify `ssh-rsa` host key with fingerprint `48:b7:5e:8a:76:4f:1a:89:e1:59:f8:f1:7f:69:7b:58` for `127.0.0.1` on port 22
+12755 ERROR [2012-06-10 14:33:42,525 main] net.schmizz.concurrent.Promise#tryRetrieve:171 - <<kex done>> woke to: net.schmizz.sshj.transport.TransportException: [HOST_KEY_NOT_VERIFIABLE] Could not verify `ssh-rsa` host key with fingerprint `48:b7:5e:8a:76:4f:1a:89:e1:59:f8:f1:7f:69:7b:58` for `127.0.0.1` on port 22
+4824 ERROR [2012-06-10 14:34:18,736 reader] n.s.sshj.transport.TransportImpl#die:570 - Dying because - net.schmizz.sshj.transport.TransportException: [HOST_KEY_NOT_VERIFIABLE] Could not verify `ssh-rsa` host key with fingerprint `48:b7:5e:8a:76:4f:1a:89:e1:59:f8:f1:7f:69:7b:58` for `127.0.0.1` on port 22
+4853 ERROR [2012-06-10 14:34:18,765 main] net.schmizz.concurrent.Promise#tryRetrieve:171 - <<kex done>> woke to: net.schmizz.sshj.transport.TransportException: [HOST_KEY_NOT_VERIFIABLE] Could not verify `ssh-rsa` host key with fingerprint `48:b7:5e:8a:76:4f:1a:89:e1:59:f8:f1:7f:69:7b:58` for `127.0.0.1` on port 22
+343 DEBUG [2012-06-10 14:39:05,165 main] c.b.r.s.i.posix.SSHLoginModule#login:79 - Connecting to 127.0.0.1
+450 DEBUG [2012-06-10 14:39:05,272 main] c.b.r.s.i.posix.SSHLoginModule#login:85 - Using username/password authentication
+2474 DEBUG [2012-06-10 14:39:52,219 main] c.b.r.s.i.posix.SSHLoginModule#login:79 - Connecting to 127.0.0.1
+3882 DEBUG [2012-06-10 14:39:53,627 main] c.b.r.s.i.posix.SSHLoginModule#login:85 - Using username/password authentication
+319 DEBUG [2012-06-10 14:44:53,229 main] c.b.r.s.i.posix.SSHLoginModule#login:85 - Connecting to 127.0.0.1
+438 DEBUG [2012-06-10 14:44:53,348 main] c.b.r.s.i.posix.SSHLoginModule#login:91 - Using username/password authentication
+736 ERROR [2012-06-10 14:44:53,646 main] net.schmizz.concurrent.Promise#tryRetrieve:171 - <<chan#0 / chanreq for subsystem>> woke to: net.schmizz.sshj.connection.ConnectionException: Request failed
+333 DEBUG [2012-06-10 14:48:36,076 main] c.b.r.s.i.posix.SSHLoginModule#login:90 - Connecting to 127.0.0.1
+566 DEBUG [2012-06-10 14:48:36,309 main] c.b.r.s.i.posix.SSHLoginModule#login:96 - Using username/password authentication
+2006 DEBUG [2012-06-10 14:48:37,749 main] c.b.r.s.i.posix.SSHLoginModule#login:110 - Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-24-generic x86_64)
+1589 DEBUG [2012-06-10 14:49:11,212 main] c.b.r.s.i.posix.SSHLoginModule#login:92 - Connecting to 127.0.0.1
+1752 DEBUG [2012-06-10 14:49:11,375 main] c.b.r.s.i.posix.SSHLoginModule#login:99 - Using username/password authentication
+2047 DEBUG [2012-06-10 14:49:11,670 main] c.b.r.s.i.posix.SSHLoginModule#login:115 - Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-24-generic x86_64)
+2047 DEBUG [2012-06-10 14:49:11,670 main] c.b.r.s.i.posix.SSHLoginModule#login:115 - 
+2048 DEBUG [2012-06-10 14:49:11,671 main] c.b.r.s.i.posix.SSHLoginModule#login:115 -  * Documentation:  https://help.ubuntu.com/
+2048 DEBUG [2012-06-10 14:49:11,671 main] c.b.r.s.i.posix.SSHLoginModule#login:115 - 
+297 DEBUG [2012-06-10 14:50:08,253 main] c.b.r.s.i.posix.SSHLoginModule#login:92 - Connecting to 127.0.0.1
+386 DEBUG [2012-06-10 14:50:08,342 main] c.b.r.s.i.posix.SSHLoginModule#login:99 - Using username/password authentication
+655 DEBUG [2012-06-10 14:50:08,611 main] c.b.r.s.i.posix.SSHLoginModule#login:116 - Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-24-generic x86_64)
+656 DEBUG [2012-06-10 14:50:08,612 main] c.b.r.s.i.posix.SSHLoginModule#login:116 - 
+656 DEBUG [2012-06-10 14:50:08,612 main] c.b.r.s.i.posix.SSHLoginModule#login:116 -  * Documentation:  https://help.ubuntu.com/
+656 DEBUG [2012-06-10 14:50:08,612 main] c.b.r.s.i.posix.SSHLoginModule#login:116 - 
+355 DEBUG [2012-06-10 14:50:27,359 main] c.b.r.s.i.posix.SSHLoginModule#login:92 - Connecting to 127.0.0.1
+451 DEBUG [2012-06-10 14:50:27,455 main] c.b.r.s.i.posix.SSHLoginModule#login:99 - Using username/password authentication
+725 DEBUG [2012-06-10 14:50:27,729 main] c.b.r.s.i.posix.SSHLoginModule#login:116 - Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-24-generic x86_64)
+725 DEBUG [2012-06-10 14:50:27,729 main] c.b.r.s.i.posix.SSHLoginModule#login:116 - 
+725 DEBUG [2012-06-10 14:50:27,729 main] c.b.r.s.i.posix.SSHLoginModule#login:116 -  * Documentation:  https://help.ubuntu.com/
+726 DEBUG [2012-06-10 14:50:27,730 main] c.b.r.s.i.posix.SSHLoginModule#login:116 - 
+4151 DEBUG [2012-06-10 14:50:55,527 main] c.b.r.s.i.posix.SSHLoginModule#login:92 - Connecting to 127.0.0.1
+5826 DEBUG [2012-06-10 14:50:57,202 main] c.b.r.s.i.posix.SSHLoginModule#login:99 - Using username/password authentication
+6444 DEBUG [2012-06-10 14:50:57,820 main] c.b.r.s.i.posix.SSHLoginModule#login:117 - Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-24-generic x86_64)
+6444 DEBUG [2012-06-10 14:50:57,820 main] c.b.r.s.i.posix.SSHLoginModule#login:117 - 
+6444 DEBUG [2012-06-10 14:50:57,820 main] c.b.r.s.i.posix.SSHLoginModule#login:117 -  * Documentation:  https://help.ubuntu.com/
+6444 DEBUG [2012-06-10 14:50:57,820 main] c.b.r.s.i.posix.SSHLoginModule#login:117 - 
+6446 DEBUG [2012-06-10 14:50:57,822 main] c.b.r.s.i.posix.SSHLoginModule#login:117 - hello

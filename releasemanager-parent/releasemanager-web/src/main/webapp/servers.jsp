@@ -48,6 +48,10 @@ BRAZEN
 	<label for="address" class="g4">Address: </label><input type="text" name="serverAddress" id="address" class="g6" maxlength="50"/>
 	</div>
 	
+	<div class="frow">
+	<label for="environment" class="g4">Environment: </label>
+	</div>
+	
 	<div class="frow" style="margin:40px 0 0 0">
 		<div class="g10 push4">
 			<input type="submit" class="g4 submit" value="Add" />

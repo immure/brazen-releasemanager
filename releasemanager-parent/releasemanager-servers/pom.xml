@@ -16,5 +16,11 @@
   		<type>jar</type>
   		<scope>compile</scope>
   	</dependency>
+  	<dependency>
+  		<groupId>net.schmizz</groupId>
+  		<artifactId>sshj</artifactId>
+  		<version>0.7.0</version>
+  		<scope>compile</scope>
+  	</dependency>
   </dependencies>
 </project>

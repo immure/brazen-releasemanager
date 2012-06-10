@@ -17,8 +17,10 @@ import jodd.madvoc.meta.MadvocAction;
 import jodd.madvoc.meta.Out;
 import jodd.petite.meta.PetiteInject;
 
+import com.brazen.releasemanager.domain.EnvironmentType;
 import com.brazen.releasemanager.domain.Server;
 import com.brazen.releasemanager.domain.UserSession;
+import com.brazen.releasemanager.service.EnvironmentService;
 import com.brazen.releasemanager.service.ServerService;
 
 @MadvocAction
@@ -30,6 +32,9 @@ public class ServersAction extends AppAction {
 
 	@PetiteInject
 	ServerService serverService;
+	
+	@PetiteInject
+	EnvironmentService environmentService;
 
 	// atts, params, etc.
 
@@ -38,6 +43,9 @@ public class ServersAction extends AppAction {
 
 	@Out
 	JDateTime now;
+	
+	@Out
+	EnvironmentType[] environmentTypes;
 
 	@Out
 	Server[] servers;
@@ -56,7 +64,7 @@ public class ServersAction extends AppAction {
 	@Action
 	@Transaction
 	public void view() {
-		log.debug("index view");
+		log.debug("servers view");
 		now = new JDateTime();
 		
 		
@@ -70,8 +78,12 @@ public class ServersAction extends AppAction {
 		}
 		
 		
+		
+		
+		
 		servers = serverService.list().toArray(new Server[] {});
 		log.debug(servers.length + " servers in list");
+		environmentTypes = environmentService.listTypes().toArray(new EnvironmentType[] {});
 		
 	}
 	
