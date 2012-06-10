@@ -1,0 +1,25 @@
+brazenDir=${sys.brazen.dir}
+
+app.dbDebug=true
+
+jdbc.driverClassName=org.hsqldb.jdbcDriver
+jdbc.url=jdbc:hsqldb:file:${brazenDir}/db/brazendb
+jdbc.username=sa
+jdbc.password=sa!
+
+# database pool
+dbpool.driver=${jdbc.driverClassName}
+dbpool.url=${jdbc.url}
+dbpool.user=${jdbc.username}
+dbpool.password=${jdbc.password}
+dbpool.maxConnections=10
+dbpool.minConnections=5
+dbpool.waitIfBusy=true
+dbpool.validateConnection=true
+dbpool.validationQuery=select 1
+
+# db orm manager
+dboom.tableNamePrefix=BZ_
+dboom.schemaName=PUBLIC
+dboom.tableNameUppercase=true
+dboom.columnNameUppercase=true

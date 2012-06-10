@@ -1,0 +1,154 @@
+198 INFO  [2012-06-10 00:36:11,378 main] jodd.joy.core.DefaultAppCore#info:46 - app dir: /home/mike/dev/brazen/workspace/releasemanager-parent/releasemanager-servers
+213 INFO  [2012-06-10 00:36:11,393 main] jodd.joy.core.DefaultAppCore#info:46 - brazen.dir: /home/mike/dev/brazen/workspace/releasemanager-parent/releasemanager-servers
+214 INFO  [2012-06-10 00:36:11,394 main] jodd.joy.core.DefaultAppCore#info:46 - proxetta initialization
+220 INFO  [2012-06-10 00:36:11,400 main] jodd.joy.core.DefaultAppCore#info:46 - petite initialization
+228 DEBUG [2012-06-10 00:36:11,408 main] jodd.petite.PetiteContainer#debug:36 - Petite container created.
+229 INFO  [2012-06-10 00:36:11,409 main] jodd.joy.core.DefaultAppCore#info:46 - app in web: false
+343 DEBUG [2012-06-10 00:36:11,523 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for jodd/joy/crypt/PasswordEncoder
+355 DEBUG [2012-06-10 00:36:11,535 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: passwordEncoder of type: PasswordEncoder in: SingletonScope using wiring mode: STRICT
+359 DEBUG [2012-06-10 00:36:11,539 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for jodd/joy/db/AppDao
+360 DEBUG [2012-06-10 00:36:11,540 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: appDao of type: AppDao in: SingletonScope using wiring mode: STRICT
+472 DEBUG [2012-06-10 00:36:11,652 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/servers/ServerMonitor
+480 DEBUG [2012-06-10 00:36:11,660 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: serverMonitor of type: ServerMonitor$Proxetta in: SingletonScope using wiring mode: STRICT
+492 DEBUG [2012-06-10 00:36:11,672 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/service/ServerService
+496 DEBUG [2012-06-10 00:36:11,676 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: serverService of type: ServerService$Proxetta in: SingletonScope using wiring mode: STRICT
+497 DEBUG [2012-06-10 00:36:11,677 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/service/EnvironmentService
+500 DEBUG [2012-06-10 00:36:11,680 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: environmentService of type: EnvironmentService$Proxetta in: SingletonScope using wiring mode: STRICT
+509 DEBUG [2012-06-10 00:36:11,689 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/install/DbInstaller
+510 DEBUG [2012-06-10 00:36:11,690 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: dbInstaller of type: DbInstaller in: SingletonScope using wiring mode: STRICT
+512 DEBUG [2012-06-10 00:36:11,692 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/AppData
+513 DEBUG [2012-06-10 00:36:11,693 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: appData of type: AppData in: SingletonScope using wiring mode: STRICT
+515 DEBUG [2012-06-10 00:36:11,695 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/ReleaseManagerAppInit
+516 DEBUG [2012-06-10 00:36:11,696 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: appInit of type: ReleaseManagerAppInit in: SingletonScope using wiring mode: STRICT
+516 INFO  [2012-06-10 00:36:11,696 main] j.p.c.AutomagicPetiteConfigurator#info:46 - Petite configured in 243 ms. Total beans: 8
+605 DEBUG [2012-06-10 00:36:11,785 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for com/brazen/releasemanager/ReleaseManagerAppCore
+622 DEBUG [2012-06-10 00:36:11,802 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: app of type: ReleaseManagerAppCore in: SingletonScope using wiring mode: STRICT
+665 INFO  [2012-06-10 00:36:11,845 main] jodd.joy.core.DefaultAppCore#info:46 - database initialization
+668 DEBUG [2012-06-10 00:36:11,848 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for jodd/db/pool/CoreConnectionPool
+669 DEBUG [2012-06-10 00:36:11,849 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: dbpool of type: CoreConnectionPool in: SingletonScope using wiring mode: STRICT
+674 INFO  [2012-06-10 00:36:11,854 main] jodd.db.pool.CoreConnectionPool#info:46 - core connection pool initialization
+1207 DEBUG [2012-06-10 00:36:12,387 main] j.proxetta.asm.ProxettaCreator#debug:36 - Creating proxy for jodd/db/oom/DbOomManager
+1208 DEBUG [2012-06-10 00:36:12,388 main] jodd.petite.PetiteBeans#debug:36 - Registering bean: dboom of type: DbOomManager in: SingletonScope using wiring mode: STRICT
+1340 INFO  [2012-06-10 00:36:12,520 main] j.d.o.c.AutomagicDbOomConfigurator#info:46 - DbOomManager configured in 111 ms. Total entities: 9
+1347 DEBUG [2012-06-10 00:36:12,527 main] c.b.r.ReleaseManagerAppInit#init:24 - app init
+1347 DEBUG [2012-06-10 00:36:12,527 main] c.b.r.ReleaseManagerAppInit#init:25 - brazen doc root: null
+1348 DEBUG [2012-06-10 00:36:12,528 main] c.b.r.install.DbInstaller#debug:36 - Check database.
+1348 DEBUG [2012-06-10 00:36:12,528 main] jodd.db.DbSession#debug:36 - Creating new db session
+1352 DEBUG [2012-06-10 00:36:12,532 main] jodd.db.pool.CoreConnectionPool#debug:36 - returning valid pooled connection
+1354 DEBUG [2012-06-10 00:36:12,534 main] jodd.db.DbQueryBase#debug:36 - Executing statement: select count(1) from bz_environment_type
+1358 DEBUG [2012-06-10 00:36:12,538 main] c.b.r.install.DbInstaller#debug:36 - Database OK.
+1359 DEBUG [2012-06-10 00:36:12,539 main] jodd.db.DbSession#debug:36 - Closing db session
+1359 INFO  [2012-06-10 00:36:12,539 main] c.b.r.install.DbInstaller#info:46 - Resetting database...
+1360 DEBUG [2012-06-10 00:36:12,540 main] c.b.r.install.DbInstaller#debug:36 - Executing /res/db-hsqldb-reset.sql
+1361 DEBUG [2012-06-10 00:36:12,541 main] jodd.db.DbSession#debug:36 - Creating new db session
+1362 DEBUG [2012-06-10 00:36:12,542 main] jodd.db.pool.CoreConnectionPool#debug:36 - returning valid pooled connection
+1363 DEBUG [2012-06-10 00:36:12,543 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_artifact 
+1363 DEBUG [2012-06-10 00:36:12,543 main] c.b.r.install.DbInstaller#debug:36 - executed query #1
+1364 DEBUG [2012-06-10 00:36:12,544 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_build 
+1364 DEBUG [2012-06-10 00:36:12,544 main] c.b.r.install.DbInstaller#debug:36 - executed query #2
+1365 DEBUG [2012-06-10 00:36:12,545 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_product 
+1366 DEBUG [2012-06-10 00:36:12,546 main] c.b.r.install.DbInstaller#debug:36 - executed query #3
+1366 DEBUG [2012-06-10 00:36:12,546 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_server 
+1367 DEBUG [2012-06-10 00:36:12,547 main] c.b.r.install.DbInstaller#debug:36 - executed query #4
+1367 DEBUG [2012-06-10 00:36:12,547 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_environment_type 
+1368 DEBUG [2012-06-10 00:36:12,548 main] c.b.r.install.DbInstaller#debug:36 - executed query #5
+1368 DEBUG [2012-06-10 00:36:12,548 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_environment 
+1369 DEBUG [2012-06-10 00:36:12,549 main] c.b.r.install.DbInstaller#debug:36 - executed query #6
+1369 DEBUG [2012-06-10 00:36:12,549 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_deployment 
+1370 DEBUG [2012-06-10 00:36:12,550 main] c.b.r.install.DbInstaller#debug:36 - executed query #7
+1370 DEBUG [2012-06-10 00:36:12,550 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_user 
+1371 DEBUG [2012-06-10 00:36:12,551 main] c.b.r.install.DbInstaller#debug:36 - executed query #8
+1371 DEBUG [2012-06-10 00:36:12,551 main] jodd.db.DbQueryBase#debug:36 - Executing update: DROP TABLE bz_serverstatus 
+1372 DEBUG [2012-06-10 00:36:12,552 main] c.b.r.install.DbInstaller#debug:36 - executed query #9
+1373 DEBUG [2012-06-10 00:36:12,553 main] jodd.db.DbSession#debug:36 - Closing db session
+1373 INFO  [2012-06-10 00:36:12,553 main] c.b.r.install.DbInstaller#info:46 - Database reset
+1373 INFO  [2012-06-10 00:36:12,553 main] c.b.r.install.DbInstaller#info:46 - Creating database...
+1374 DEBUG [2012-06-10 00:36:12,554 main] c.b.r.install.DbInstaller#debug:36 - Executing /res/db-hsqldb.sql
+1376 DEBUG [2012-06-10 00:36:12,556 main] jodd.db.DbSession#debug:36 - Creating new db session
+1376 DEBUG [2012-06-10 00:36:12,556 main] jodd.db.pool.CoreConnectionPool#debug:36 - returning valid pooled connection
+1377 DEBUG [2012-06-10 00:36:12,557 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_artifact ( id INT IDENTITY, artifactId VARCHAR(1000) NOT NULL, version VARCHAR(200) NOT NULL ) 
+1378 DEBUG [2012-06-10 00:36:12,558 main] c.b.r.install.DbInstaller#debug:36 - executed query #1
+1378 DEBUG [2012-06-10 00:36:12,558 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_artifact_artifactId ON bz_artifact (artifactId) 
+1379 DEBUG [2012-06-10 00:36:12,559 main] c.b.r.install.DbInstaller#debug:36 - executed query #2
+1379 DEBUG [2012-06-10 00:36:12,559 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_build ( id INT IDENTITY, build_id VARCHAR(200) NOT NULL, version VARCHAR(200) NOT NULL, product_id INT NOT NULL ) 
+1381 DEBUG [2012-06-10 00:36:12,561 main] c.b.r.install.DbInstaller#debug:36 - executed query #3
+1381 DEBUG [2012-06-10 00:36:12,561 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_build_buildid ON bz_build (build_id) 
+1382 DEBUG [2012-06-10 00:36:12,562 main] c.b.r.install.DbInstaller#debug:36 - executed query #4
+1382 DEBUG [2012-06-10 00:36:12,562 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_build_version ON bz_build (build_id, version) 
+1383 DEBUG [2012-06-10 00:36:12,563 main] c.b.r.install.DbInstaller#debug:36 - executed query #5
+1383 DEBUG [2012-06-10 00:36:12,563 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_build_product ON bz_build (product_id) 
+1384 DEBUG [2012-06-10 00:36:12,564 main] c.b.r.install.DbInstaller#debug:36 - executed query #6
+1384 DEBUG [2012-06-10 00:36:12,564 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_product ( id INT IDENTITY, product_name VARCHAR(200) ) 
+1385 DEBUG [2012-06-10 00:36:12,565 main] c.b.r.install.DbInstaller#debug:36 - executed query #7
+1385 DEBUG [2012-06-10 00:36:12,565 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_product_productname ON bz_product (product_name) 
+1386 DEBUG [2012-06-10 00:36:12,566 main] c.b.r.install.DbInstaller#debug:36 - executed query #8
+1386 DEBUG [2012-06-10 00:36:12,566 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_server ( id INT identity, name VARCHAR(200) NOT NULL, address VARCHAR(200) NOT NULL, environment INT, serverstatus INT ) 
+1387 DEBUG [2012-06-10 00:36:12,567 main] c.b.r.install.DbInstaller#debug:36 - executed query #9
+1388 DEBUG [2012-06-10 00:36:12,568 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_server_name ON bz_server (name) 
+1388 DEBUG [2012-06-10 00:36:12,568 main] c.b.r.install.DbInstaller#debug:36 - executed query #10
+1389 DEBUG [2012-06-10 00:36:12,569 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_server_address ON bz_server(address) 
+1389 DEBUG [2012-06-10 00:36:12,569 main] c.b.r.install.DbInstaller#debug:36 - executed query #11
+1390 DEBUG [2012-06-10 00:36:12,570 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_environment_type ( id INT IDENTITY, environment_type_name VARCHAR(100) NOT NULL ) 
+1392 DEBUG [2012-06-10 00:36:12,572 main] c.b.r.install.DbInstaller#debug:36 - executed query #12
+1393 DEBUG [2012-06-10 00:36:12,573 main] jodd.db.DbQueryBase#debug:36 - Executing update: INSERT INTO bz_environment_type VALUES (0, 'STAGING') 
+1394 DEBUG [2012-06-10 00:36:12,574 main] c.b.r.install.DbInstaller#debug:36 - executed query #13
+1395 DEBUG [2012-06-10 00:36:12,575 main] jodd.db.DbQueryBase#debug:36 - Executing update: INSERT INTO bz_environment_type VALUES (1, 'PRODUCTION') 
+1396 DEBUG [2012-06-10 00:36:12,576 main] c.b.r.install.DbInstaller#debug:36 - executed query #14
+1396 DEBUG [2012-06-10 00:36:12,576 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_environment ( id INT IDENTITY, environment_name VARCHAR(200) NOT NULL, environmenttype INT ) 
+1397 DEBUG [2012-06-10 00:36:12,577 main] c.b.r.install.DbInstaller#debug:36 - executed query #15
+1398 DEBUG [2012-06-10 00:36:12,578 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_environment_name ON bz_environment (environment_name) 
+1399 DEBUG [2012-06-10 00:36:12,579 main] c.b.r.install.DbInstaller#debug:36 - executed query #16
+1399 DEBUG [2012-06-10 00:36:12,579 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE TABLE bz_deployment ( id INT IDENTITY, deployment_time TIMESTAMP NOT NULL, server INT, build INT ) 
+1400 DEBUG [2012-06-10 00:36:12,580 main] c.b.r.install.DbInstaller#debug:36 - executed query #17
+1401 DEBUG [2012-06-10 00:36:12,581 main] jodd.db.DbQueryBase#debug:36 - Executing update: CREATE INDEX idx_deployment_server ON bz_deployment (server_id) 
+1409 ERROR [2012-06-10 00:36:12,589 main] jodd.joy.core.DefaultAppCore#error:76 - jodd.db.DbSqlException: Unable to execute the query.; <--- org.hsqldb.HsqlException: user lacks privilege or object not found: SERVER_ID
+jodd.db.DbSqlException: Unable to execute the query.; <--- org.hsqldb.HsqlException: user lacks privilege or object not found: SERVER_ID
+	at jodd.db.DbQueryBase.executeUpdate(DbQueryBase.java:599) ~[jodd-wot-3.3.3.jar:3.3.3]
+	at jodd.db.DbQueryBase.executeUpdate(DbQueryBase.java:563) ~[jodd-wot-3.3.3.jar:3.3.3]
+	at com.brazen.releasemanager.install.DbInstaller.executeScriptQueries(DbInstaller.java:94) ~[classes/:na]
+	at com.brazen.releasemanager.install.DbInstaller.installDb(DbInstaller.java:48) ~[classes/:na]
+	at com.brazen.releasemanager.ReleaseManagerAppInit.init(ReleaseManagerAppInit.java:31) ~[classes/:na]
+	at jodd.joy.core.DefaultAppCore.startApp(DefaultAppCore.java:434) ~[jodd-joy-3.3.3.jar:3.3.3]
+	at jodd.joy.core.DefaultAppCore.start(DefaultAppCore.java:187) ~[jodd-joy-3.3.3.jar:3.3.3]
+	at com.brazen.releasemanager.servers.ServerMonitorTest.setUp(ServerMonitorTest.java:28) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.6.0_23]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.6.0_23]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.6.0_23]
+	at java.lang.reflect.Method.invoke(Method.java:616) ~[na:1.6.0_23]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: SERVER_ID
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.jdbc.JDBCStatement.fetchResult(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.jdbc.JDBCStatement.executeUpdate(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at jodd.db.DbQueryBase.executeUpdate(DbQueryBase.java:593) ~[jodd-wot-3.3.3.jar:3.3.3]
+	... 22 common frames omitted
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: SERVER_ID
+	at org.hsqldb.error.Error.error(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.error.Error.error(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.Table.getColumnIndex(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.Table.getColumnIndexes(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.ParserDQL.readColumnList(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.ParserDDL.compileCreateIndex(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.ParserDDL.compileCreate(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.ParserCommand.compilePart(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.ParserCommand.compileStatements(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.Session.executeDirectStatement(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	at org.hsqldb.Session.execute(Unknown Source) ~[hsqldb-2.2.8.jar:2.2.8]
+	... 25 common frames omitted
+1410 INFO  [2012-06-10 00:36:12,590 main] jodd.joy.core.DefaultAppCore#info:46 - shutting down...
+1410 DEBUG [2012-06-10 00:36:12,590 main] c.b.r.ReleaseManagerAppInit#stop:37 - app stop
+1411 INFO  [2012-06-10 00:36:12,591 main] jodd.joy.core.DefaultAppCore#info:46 - database shutdown
+1411 INFO  [2012-06-10 00:36:12,591 main] jodd.db.pool.CoreConnectionPool#info:46 - core connection pool shutdown
+1412 INFO  [2012-06-10 00:36:12,592 main] jodd.db.pool.CoreConnectionPool#info:46 - core connection pool shutdown
+1412 INFO  [2012-06-10 00:36:12,592 main] jodd.joy.core.DefaultAppCore#info:46 - app stopped

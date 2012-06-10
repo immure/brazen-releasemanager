@@ -1,0 +1,11 @@
+<%@ taglib prefix="j" uri="/jodd" %>
+<div id="total">
+<j:switch value="${question.totalVotes}">
+	<j:case value="0">No one answered this question ever! Be the first!</j:case>
+	<j:case value="1">We have only <b>one</b> answer on this question! Please, submit yours!</j:case>
+	<j:default>
+		Hey, <b style="font-size:1.3em">${question.totalVotes}</b> people answered this question!
+	</j:default>
+</j:switch>
+
+</div>

@@ -1,0 +1,2 @@
+<%@ taglib prefix="joyfn" uri="/joddfn-joy" %>
+${joyfn:initPage(pageContext)}

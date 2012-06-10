@@ -1,0 +1,9 @@
+DROP TABLE bz_artifact;
+DROP TABLE bz_build;
+DROP TABLE bz_product;
+DROP TABLE bz_server;
+DROP TABLE bz_environment_type;
+DROP TABLE bz_environment;
+DROP TABLE bz_deployment;
+DROP TABLE bz_user;
+DROP TABLE bz_serverstatus;

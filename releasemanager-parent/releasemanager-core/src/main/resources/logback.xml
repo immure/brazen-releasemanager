@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration>
+
+	<!-- appenders -->
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%-5level [%date{ISO8601}] %X{xaName} %logger{16}#%method:%line - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="FILEOUT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${uphea.dir}/log/app.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${log.dir}/app%d{yyyy-MM-dd}.log.zip</FileNamePattern>
+		</rollingPolicy>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%relative %-5level [%date{ISO8601} %thread] %logger{32}#%method:%line - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<!-- configurations -->
+
+	<logger name="com.brazen">
+		<level value="DEBUG"/>
+	</logger>
+
+	<logger name="jodd">
+		<level value="DEBUG"/>
+	</logger>
+
+	<!-- root -->
+
+	<root>
+		<level value="WARN"/>
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILEOUT"/>
+	</root>
+
+</configuration>

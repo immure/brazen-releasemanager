@@ -1,0 +1,43 @@
+#wait { position:fixed; top:0; left:50%; width:300px; margin-left: -150px; z-index:10000; font-size:16px;
+		background-color:red; color:white; padding:10px 6px; font-weight:bold; text-align:center; display:none;}
+
+body	{font-size: 14px; line-height:17px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; color:#444}
+#main	{width:980px; margin-left: auto; margin-right: auto; text-align: left; background-color:#fff;
+			border-top: 8px solid #ddd;
+			border-left: 8px solid #ddd; border-right: 8px solid #ddd; border-bottom: 8px solid #ddd; 
+			margin-bottom:16px;margin-top:16px; padding: 12px}
+#head	{ border-bottom: 4px solid #ddd; padding-bottom: 12px}
+#logo	{ font-size: 28px; margin-bottom: 16px}
+
+#pagetitle { margin-top: 12px; margin-bottom: 16px; font-size: 16px; border-bottom: 4px solid #ddd; padding-bottom: 12px}
+
+/* table styling */
+
+.newspaper-a
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 45px;
+	width: 90%;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #69c;
+}
+.newspaper-a th
+{
+	padding: 12px 17px 12px 17px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #039;
+	border-bottom: 1px dashed #69c;
+}
+.newspaper-a td
+{
+	padding: 7px 17px 7px 17px;
+	color: #669;
+}
+.newspaper-a tbody tr:hover td
+{
+	color: #339;
+	background: #d0dafd;
+}

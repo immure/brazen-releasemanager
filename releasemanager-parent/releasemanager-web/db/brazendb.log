@@ -1,0 +1,36 @@
+/*C7*/SET SCHEMA PUBLIC
+DROP TABLE bz_artifact 
+DROP TABLE bz_build 
+DROP TABLE bz_product 
+DROP TABLE bz_server 
+DROP TABLE bz_environment_type 
+DROP TABLE bz_environment 
+DROP TABLE bz_deployment 
+DROP TABLE bz_user 
+CREATE TABLE bz_artifact ( id INT IDENTITY, artifactId VARCHAR(1000) NOT NULL, version VARCHAR(200) NOT NULL ) 
+CREATE INDEX idx_artifact_artifactId ON bz_artifact (artifactId) 
+CREATE TABLE bz_build ( id INT IDENTITY, buildId VARCHAR(200) NOT NULL, version VARCHAR(200) NOT NULL, product_id INT NOT NULL ) 
+CREATE INDEX idx_build_buildid ON bz_build (buildId) 
+CREATE INDEX idx_build_version ON bz_build (buildId, version) 
+CREATE INDEX idx_build_product ON bz_build (product_id) 
+CREATE TABLE bz_product ( id INT IDENTITY, productName VARCHAR(200) ) 
+CREATE INDEX idx_product_productname ON bz_product (productName) 
+CREATE TABLE bz_server ( id INT identity, name VARCHAR(200) NOT NULL, address VARCHAR(200) NOT NULL, environment INT ) 
+CREATE INDEX idx_server_name ON bz_server (name) 
+CREATE INDEX idx_server_address ON bz_server(address) 
+CREATE TABLE bz_environment_type ( id INT IDENTITY, environmentTypeName VARCHAR(100) NOT NULL ) 
+INSERT INTO BZ_ENVIRONMENT_TYPE VALUES(0,'STAGING')
+COMMIT
+INSERT INTO BZ_ENVIRONMENT_TYPE VALUES(1,'PRODUCTION')
+COMMIT
+CREATE TABLE bz_environment ( id INT IDENTITY, environmentName VARCHAR(200) NOT NULL, environmenttype_id INT ) 
+CREATE INDEX idx_environment_name ON bz_environment (environmentName) 
+CREATE TABLE bz_deployment ( id INT IDENTITY, deploymentTime TIMESTAMP NOT NULL, server_id INT, build_id INT ) 
+CREATE INDEX idx_deployment_server ON bz_deployment (server_id) 
+CREATE INDEX idx_deployment_build ON bz_deployment (build_id) 
+CREATE TABLE bz_user ( id INT IDENTITY, screenName VARCHAR(20) NOT NULL, name VARCHAR(100) NOT NULL, hashpw VARCHAR(100) NOT NULL ) 
+CREATE INDEX idx_user_screenname ON bz_user (screenName) 
+INSERT INTO BZ_SERVER VALUES(0,'localhost','127.0.0.1',NULL)
+COMMIT
+INSERT INTO BZ_SERVER VALUES(1,'erhe','eheshr',NULL)
+COMMIT

@@ -1,0 +1,27 @@
+<%@ taglib prefix="jfn" uri="/joddfn" %>
+<%@ taglib prefix="joy" uri="/jodd-joy" %>
+<joy:auth auth="true">
+<script type="text/javascript">
+function saveQuestionAsFavorite() {
+	pleaseWait();
+	var fav = $("#save");
+	$.ajax({
+		type: 'POST',
+		url: '/index.save',
+		data: 'question.id=' + ${question.id},
+		success: function(msg) {
+			pleaseWait(false);
+			if (msg == 'true') {
+				fav.addClass('on');
+			} else if (msg == 'false') {
+				fav.removeClass('on');
+			}
+		}
+	});
+	return false;
+}
+</script>
+<div id="fav"><a href="#" onclick="saveQuestionAsFavorite(); return false;">
+	<div id="save" ${jfn:test(saved, 'class="on"', '')}>save question<br/>as favorite!</div></a>
+</div>
+</joy:auth>

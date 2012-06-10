@@ -1,0 +1,32 @@
+#
+# Madvoc configuration file
+# most of the settings can be set from here
+# (besides the primary settings in Java).
+#
+# this is a good place for settings that will change
+# on production
+
+
+# list of madvoc method action annotation
+madvocConfig.actionAnnotations=\
+		jodd.madvoc.meta.Action,\
+		jodd.joy.madvoc.meta.PostAction,\
+		jodd.joy.madvoc.meta.JsonAction
+
+# list of default interceptors
+madvocConfig.defaultInterceptors=
+
+# unlimited uploads size
+madvocConfig.fileUploadFactory.maxFileSize=-1
+
+# empty parameters will not be ignored (default)
+madvocConfig.requestScopeInjectorConfig.ignoreEmptyRequestParams=false
+# empty parameters will be threaded as nulls
+madvocConfig.requestScopeInjectorConfig.treatEmptyParamsAsNull=true
+
+# create default aliases for all actions
+madvocConfig.createDefaultAliases=true
+
+
+# in production we can disable it
+jodd.madvoc.interceptor.EchoInterceptor.enabled=true
